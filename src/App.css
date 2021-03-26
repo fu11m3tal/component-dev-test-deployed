@@ -1,0 +1,231 @@
+
+html{
+  min-width: 320px;
+  max-width: 1920px;
+  /* width: 90rem; */
+  min-height: 100vh;
+  object-fit: contain;
+}
+
+.App {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('./backgrounds/slide_one.jpg');
+  /* max-width: 1440px; */
+  min-height: 100vh;
+  background-size:100vw;
+}
+
+.Layout {
+  /* display:flexbox; */
+  padding: 1.179rem 8.125rem 0 7.938rem;
+}
+
+@keyframes backdrop-slide-left {
+  0% { 
+    transform: translateX(350px);
+  }
+  100% {
+    transform: translateX(0px);
+  } 
+}
+
+@keyframes backdrop-slide-right {
+  0% { 
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(0px);
+  } 
+}
+
+@keyframes backdrop-slide-down {
+  0% { 
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0px);
+  } 
+}
+
+.Layout .Logo {
+  width: 4.728rem;
+  height: 2.363rem;
+  margin: 0;
+  object-fit: contain;
+  background-color: transparent;
+  position: relative;
+     animation: 4s ease backdrop-slide-down 0s 1;
+}
+
+.Layout .Contact {
+  float: right;
+  width: 8.688rem;
+  height: 2.625rem;
+  padding: 0.75rem 0.063rem 0.75rem 0;
+  border: solid 1px white;
+  background-color: transparent;
+  font-family: HelveticaNeue;
+  font-size: 0.938rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  position: relative;
+     animation: 3s ease backdrop-slide-left 0s 1;
+}  
+
+.Text {
+  width: 8.625rem;
+  height: 1.125rem;
+  font-family: HelveticaNeue;
+  font-size: 0.938rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}
+
+.Menu {
+  width: 4.563rem;
+  height: 4.875rem;
+  margin: 0.313rem 59.875rem 0 0;
+}
+
+.Menu a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: white;
+}
+
+.Menu :nth-child(1) {
+  position: relative;
+     animation: 3s ease backdrop-slide-right 0s 1;
+}
+
+.Menu :nth-child(2) {
+  position: relative;
+     animation: 3.5s ease backdrop-slide-right 0s 1;
+}
+
+.Menu :nth-child(3) {
+  position: relatve;
+     animation: 4s ease backdrop-slide-right 0s 1;
+}
+.Menu a:hover {
+  /* color: #ffc004; */
+}
+
+.Menu a.active {
+  color: #ffc004;
+}
+
+
+
+.Page {
+  width: 90rem;
+  height: 50.625rem;
+  padding: 0 8.125rem;
+  background-color: transparent;
+}
+
+.Page-header {
+  display: flex;
+  /* height: 30rem; */
+}
+
+.Page-headline {
+  width: 38.25rem;
+  height: 17rem;
+  margin: 10.125rem 10.688rem 2.938rem 0;
+  font-family: HelveticaNeue;
+  font-size: 5.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 5.25rem;
+  letter-spacing: -2.2px;
+  color: white;
+}
+
+
+
+.Page-subhead {
+  width: 22.5vw;
+  height: 14.188rem;
+  margin: 11.563rem 0rem;
+  font-family: HelveticaNeue;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.625rem;
+  letter-spacing: normal;
+  color: white;
+}
+
+.Page-cta {
+  width: 73.75rem;
+  height: 2.49rem;
+  /* margin: 2.938rem 0 0 0.188rem; */
+  padding: 4.625rem 8.5rem 4.563rem 4.813rem;
+  background-color: white;
+}
+
+.Page-cta p{
+  /* width: 30.188rem;
+  height: 2rem; */
+  margin: 0 13.75rem 0 0;
+  font-family: HelveticaNeue;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: -0.63px;
+  color: #000000;
+  overflow: hidden;
+}
+
+.LETS-TALK {
+  width: 16.454rem;
+  height: 1.25rem;
+  margin: 0.063rem 0;
+  font-family: HelveticaNeue;
+  font-size: 0.688rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.Questions-Lets-talk {
+  width: 264px;
+  height: 22px;
+  margin: 5px 0 5px 220px;
+  padding: 0 0.7px 0 0;
+}
+
+.Arrow {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0 9.829rem 0 5.25rem;
+  padding: 0.313rem 0.125rem;
+}
+
+
