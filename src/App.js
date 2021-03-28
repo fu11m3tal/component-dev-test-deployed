@@ -3,6 +3,7 @@ import './App.css';
 import content from './content.json';
 import logo from './abc_logo.svg';
 import Page from './Page.js';
+import Layout from './Layout.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,7 +30,8 @@ class App extends React.Component {
     var {type, headline, subhead, cta, background} = block;
     return (
         <div className="App">
-          <div className='Layout'>
+          <Layout logo={logo} pages={content.pages} setMain={this.setMain}/>
+          {/* <div className='Layout'>
               <img className="Logo" src={`${logo}`}/>
               <button className="Contact">Contact Us</button>
               <div className='Menu'>
@@ -37,7 +39,7 @@ class App extends React.Component {
                   <a id={index} href={`#${item.title}`} onClick={this.setMain}>{item.title}</a>
                 ))}
               </div>
-          </div>
+          </div> */}
           <Page headline={headline} subhead={subhead} cta={cta}/>
         </div>
     );
